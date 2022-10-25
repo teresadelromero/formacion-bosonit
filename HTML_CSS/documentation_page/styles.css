@@ -1,0 +1,129 @@
+:root{
+    --color-primary:rgb(255, 45, 32);
+    --color-menu:rgb(245,245,250);
+    --color-detail:rgb(147,147,158);
+    --color-code-background:rgb(41, 45, 62);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height : 2em;
+}
+
+ul, li,a {
+    all: unset;
+}
+
+#main-doc{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+.logo-div{
+    display: inline-block;
+}
+
+.logo-div>img{
+    padding:0.3em;
+}
+
+#title-navbar{
+    font-weight: bolder;
+    color:var(--color-primary);
+    font-size: 2vh;
+}
+
+#navbar {
+    grid-column: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,45,32,0.0844712885154062) 100%);
+}
+
+#navbar > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar > ul > li{
+    padding-top:1.2em;
+}
+
+.nav-link{
+    cursor:pointer;
+}
+
+.nav-link:hover{
+    color:var(--color-primary);
+    font-weight: bold;
+}
+
+#navbar > *{
+    margin-top: 1.5em;
+}
+
+.main-section {
+    grid-column: 2 / 5;
+    margin: 1em 6em;
+    text-align: justify;
+}
+
+.main-section > header{
+    font-weight: bolder;
+    color:var(--color-primary);
+    font-size: 4vh;
+    margin-top:1.2em;
+
+}
+
+#code-box{
+    font-size: 2vh;
+    margin: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-code-background);
+    border-radius: 12px;
+    color: white;
+    max-width: max-content;
+    font:'Source Code Pro', monospace;
+}
+
+pre{
+    padding-top:0.8em;
+    padding-right: 6em;
+    background-color: var(--color-code-background);
+    width: fit-content;
+    border-radius: 12px;
+}
+
+#link-more{
+    float:right;
+    color:var(--color-detail);
+}
+
+#link-more:hover{
+    cursor:pointer;
+    text-decoration: underline ;
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
+}
+
+@media only screen and (max-width: 768px) {
+
+    #navbar{
+        display:none;
+    }
+
+    .main-section{
+        grid-column: 1/5;
+    }
+  
+}
+  

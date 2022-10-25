@@ -1,0 +1,114 @@
+
+
+:root{
+    --color-primary:rgb(2, 70, 105);
+    --color-secondary: rgb(75, 182, 236);
+    --color-tertiary: rgba(255, 255, 255, 0.6);
+    --color-quaternary: rgb(56, 90, 107);
+    --color-quinary: rgb(4, 122, 181);
+}
+
+body{
+    background-image:url(../survey_page/img/sea.jpg) ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main-container{
+    margin-bottom: 60em;
+}
+
+#survey-form{
+    margin-top: 14em;
+    padding: 3em 3em 3em 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    background-color: var(--color-tertiary) ;
+    border-radius: 12px;
+}
+
+#title-description-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input { 
+    margin-bottom: 10px; 
+}
+
+#title{
+    font-size: 10vh;
+    color:white;
+    letter-spacing: 15px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+#description{
+    font-size: 3vh;
+    color: var(--color-primary);
+
+    font-weight: 900;
+}
+
+#submit{
+    border-radius: 12px;
+    border: none;
+    width: 5em;    
+}
+
+#submit:hover{
+    background-color: lightblue;
+    color:rgb(2, 70, 105);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+    #title{
+        font-size: 7vh;
+        color:white;
+        letter-spacing: 15px;
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+    
+    #description{
+        font-size: 3vh;
+        color: var(--color-primary);
+        font-weight: 900;
+    }
+
+    #survey-form{
+        margin-top: 13em
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #title{
+        font-size: 7vh;
+        color:white;
+        letter-spacing: 15px;
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+    
+    #description{
+        font-size: 3vh;
+        color: var(--color-primary);
+        font-weight: 900;
+    }
+
+    #survey-form{
+        margin-top: 16em
+    }
+
+}

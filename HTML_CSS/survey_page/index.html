@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey</title>
+</head>
+<body>
+    <main id="main-container">
+        <div id="title-description-div">
+            <h1 id="title">ADOPT A FISH</h1>
+            <p id="description"> 
+                Apply today and receive your fish tomorrow</p>
+        </div>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name" required><br>
+
+            <label for="email" id="email-label">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your email" required><br>
+
+            <label for="number" id="number-label">How old are you?</label><br>
+            <input type="number" id="number" name="number" min="18" max="120" placeholder="Your age"><br>
+
+            <label for="size">Select the size of the desired fish:</label><br>
+            <select name="size" id="dropdown" multiple>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="huge">Huge</option>
+            </select>
+
+            <p>Is it your first time as a fish owner?</p> 
+            <input type="radio" id="first-time" name="experience" value="Y">
+            <label for="first-time">Yes</label><br>
+            <input type="radio" id="not-first-time" name="experience" value="N">
+            <label for="not-first-time">No</label><br>
+
+            <p>How would you like your fish to be?</p>
+            <input type="checkbox" id="feature1" name="feature1" value="Colourful">
+            <label for="feature1"> Colorful</label><br>
+            <input type="checkbox" id="feature2" name="feature2" value="Outgoing">
+            <label for="feature2"> Outgoing</label><br>
+            <input type="checkbox" id="feature3" name="feature3" value="Trauma Free">
+            <label for="feature3"> Trauma Free</label><br>
+            <input type="checkbox" id="feature4" name="feature4" value="Stinky">
+            <label for="feature4"> Stinky</label><br>
+            
+            <p> If you want to get personalized info before getting fully commited to the adoption,<br> please type here every question or requirement you may have</p>
+            <textarea id="additional-info" name="additional-info" rows="4" cols="50">Type here</textarea><br>
+            
+            <input type="submit" value="Submit" id="submit">
+
+        </form>
+    </main>
+</body>
+</html>

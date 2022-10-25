@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    font-weight: lighter;
+}
+
+:root {
+    --color-primary: rgb(102, 51, 153, 0.8);
+    --color-secondary: rgb(102, 51, 153, 0.2);
+    --color-tertiary: rgb(102, 51, 153, 0.7);
+    --color-quaternary: rgba(160, 90, 230, 0.9);
+    --color-quinary: rgb(44, 16, 71);
+}
+
+a {
+    all: unset;
+}
+
+p{
+    line-height: 32px;   /* within paragraph */
+    margin-bottom: 30px; 
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#header-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#title{
+    width: 60%;
+    height: auto;
+    font-family: audiowide, 'Arial', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+#subtitle{
+    color: white;
+    font-family: audiowide, 'Arial', 'sans-serif';
+    font-size: 5vh;
+}
+
+#img-div{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#image{
+    max-width: 100%; 
+    height: auto; 
+    object-fit: contain;
+    align-items: center;
+}
+
+#img-caption{
+
+    text-align: right;
+    font-size: 1.8vh;
+    margin:0.2em;
+}
+
+#jimi-Hendrix{
+    color:rebeccapurple;
+    font-family: audiowide, 'Arial', 'sans-serif';
+    font-size: 15vh;
+}
+
+#tribute-info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* GRAPHIC INFO */
+
+#graphic-info-div{
+    margin: 0px 3em 0px 3em;
+    display: flex;
+    height: 10em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#biography-graphic-div, #career-graphic-div, #awards-graphic-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: audiowide, Arial, Helvetica, sans-serif;
+}
+
+#award-svg, #career-svg, #biography-svg, #timeline-svg{
+    height: 4.2em;
+    width: auto;
+    margin:0.5em;
+}
+
+#award-svg:hover, #career-svg:hover, #biography-svg:hover{
+    color:rgb(102, 51, 153);
+    cursor: pointer;
+}
+
+#biography-graphic-div> a:hover, #career-graphic-div>a:hover, #awards-graphic-div > a:hover {
+    color:rebeccapurple;
+    cursor: pointer;
+}
+
+/*TEXTUAL INFO*/
+
+#textual-info{
+    margin: 2em 8em 2em 8em;
+    text-align: justify;
+    line-height: 2em;
+}
+
+#textual-info > section > h3{
+    color:rgb(102, 51, 153);;
+    font-family: audiowide, 'Arial', 'sans-serif';
+    margin-bottom: 1.2em;
+}
+
+
+#textual-info>section{
+    padding: 1.5em 0.3em 1.5em 0.3em;
+}
+
+#textual-info>section{
+    font-size: 18px;
+}
+
+#textual-info > h3 {
+    color:rgb(102, 51, 153);;
+    font-family: audiowide, 'Arial', 'sans-serif';
+}
+
+/*Timeline section */
+.content{
+    font-family: 'Arial', 'sans-serif';
+}
+
+/* The actual timeline (the vertical ruler) */
+#timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  #timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--color-primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: var(--color-secondary);
+    border: 4px solid var(--color-tertiary);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -17px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: var(--color-primary);
+    position: relative;
+    border-radius: 6px;
+  }
+
+  #button-top-div{
+    display: flex;
+    justify-content: center;
+  }
+
+    #jump-top-button-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: auto;
+        padding: 10px;
+        margin: 20px;
+        background-color: var(--color-primary);
+        color:white;
+        border-radius: 25px;
+        font-family: audiowide, 'Arial', 'sans-serif';
+    }
+
+    #jump-top-button-div:hover{
+        cursor: pointer;
+        background-color: var(--color-quinary);
+    }
+
+    #footer-div{
+        background-color: var(--color-quaternary);
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: baseline;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2vh;
+        padding: 2em 2em 0 2em ;
+    }
+
+    .more-info-link:hover{
+        cursor: pointer;
+        color:var(--color-quinary)
+    }
+
+@media screen and (max-width: 700px) {
+   
+    #jimi-Hendrix{
+        margin-left: 3.5em;
+        font-size: 8vh;
+    }
+
+    #textual-info{
+        margin: 0.5em 1.2em 0.5em 1.2em;
+        text-align: justify;
+        line-height: 1.2em;
+    }
+
+    #graphic-info-div{
+        margin: 0px 3em 0px 3em;
+        display: flex;
+        flex-wrap: wra;
+        height: auto;
+        align-items: center;
+    }
+}
