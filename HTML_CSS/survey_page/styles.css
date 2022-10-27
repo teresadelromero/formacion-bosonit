@@ -1,5 +1,3 @@
-
-
 :root{
     --color-primary:rgb(2, 70, 105);
     --color-secondary: rgb(75, 182, 236);
@@ -9,8 +7,9 @@
 }
 
 body{
-    background-image:url(./img/sea.jpg) ;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(35,39,80);
+    background: linear-gradient(0deg, rgba(35,39,80,1) 0%, rgba(32,115,255,0.6923144257703081) 100%);
+    font-family: 'Arial', 'sans-serif';
 }
 
 #main-container{
@@ -18,7 +17,7 @@ body{
 }
 
 #survey-form{
-    margin-top: 14em;
+    margin-top: 25em;
     padding: 3em 3em 3em 3em;
     position: absolute;
     top: 50%;
@@ -30,11 +29,18 @@ body{
     border-radius: 12px;
 }
 
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
 #title-description-div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top:0em;
 }
 
 
@@ -46,7 +52,7 @@ input {
     font-size: 10vh;
     color:white;
     letter-spacing: 15px;
-    font-weight: 900;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
@@ -54,7 +60,7 @@ input {
     font-size: 3vh;
     color: var(--color-primary);
 
-    font-weight: 900;
+    font-weight: 300;
 }
 
 #submit{
@@ -75,18 +81,19 @@ input {
         font-size: 7vh;
         color:white;
         letter-spacing: 15px;
-        font-weight: 900;
+        font-weight: 500;
         margin-bottom: 0;
+        text-align: center;
     }
     
     #description{
         font-size: 3vh;
         color: var(--color-primary);
-        font-weight: 900;
+        font-weight: 500;
     }
 
     #survey-form{
-        margin-top: 13em
+        margin: 10em 2em 2em 2em;
     }
 
 }
@@ -97,14 +104,15 @@ input {
         font-size: 7vh;
         color:white;
         letter-spacing: 15px;
-        font-weight: 900;
+        font-weight: 500;
         margin-bottom: 0;
+        text-align: center;
     }
     
     #description{
         font-size: 3vh;
         color: var(--color-primary);
-        font-weight: 900;
+        font-weight: 500;
     }
 
     #survey-form{
