@@ -7,6 +7,7 @@
 }
 
 body{
+    height: 100%;
     background: rgb(35,39,80);
     background: linear-gradient(0deg, rgba(35,39,80,1) 0%, rgba(32,115,255,0.6923144257703081) 100%);
     font-family: 'Arial', 'sans-serif';
@@ -64,14 +65,17 @@ input {
 }
 
 #submit{
+    margin-top: 3em;
     border-radius: 12px;
     border: none;
     width: 5em;    
+    cursor: pointer;
+    float: right;
 }
 
 #submit:hover{
-    background-color: lightblue;
-    color:rgb(2, 70, 105);
+    background-color: var(--color-primary);
+    color:#ffffff;
     cursor: pointer;
 }
 
@@ -93,8 +97,10 @@ input {
     }
 
     #survey-form{
-        margin: 10em 2em 2em 2em;
+        margin: 30em 1em 2em 1em;
+        min-width: 30em;
     }
+
 
 }
 
@@ -116,7 +122,24 @@ input {
     }
 
     #survey-form{
-        margin-top: 16em
+        margin: 30em 1em 2em 1em;
+        min-width: 20em;
     }
 
 }
+
+input[type=text], input[type='email'], input[type='number'],select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
