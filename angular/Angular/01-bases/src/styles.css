@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+ @font-face {
+        font-family: 'DIN Alternate Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('DIN Alternate Bold'), url('assets/fonts/DINAlternate-Bold.woff') format('woff');
+    }
+
+H1,H2,H3{
+    font-family: 'Din Alternate Bold', 'arial Bold';
+}
+
+p{
+    font-family: 'Arial', 'sans-serif';
+}
+
+button{
+    font-family: 'Din Alternate Bold';
+}
