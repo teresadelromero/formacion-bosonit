@@ -7,7 +7,6 @@
     clip-path: polygon(41% 0, 0 0, 0 100%, 64% 100%);
     display:flex;
     align-items: center;
-    position: relative;
 }
 .image-header{
 
