@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+/**************************************************************** COLOR PALETTE */
+
+:root{
+    --color-primary: rgb(145, 118, 247);
+    --color-secondary: rgb(239, 237, 255);
+    --color-tertiary: rgb(252, 199, 0);
+    --color-cuarternary: rgb(255, 255, 255);
+    --font-color: rgb(112, 112, 112);
+ }
+
+/* ------------------------------------------------TYPOGRAPHY */
 @import "~bootstrap/dist/css/bootstrap.css";
 
 
@@ -20,3 +32,4 @@ p{
 button{
     font-family: 'Din Alternate Bold';
 }
+
