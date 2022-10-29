@@ -1,23 +1,104 @@
-.title-header{
-    padding-top:2em;
-    padding-bottom: 2em;
-    max-height:70vh;
-    background-color: var(--color-secondary);
-    color: var(--font-color);
-    clip-path: polygon(41% 0, 0 0, 0 100%, 64% 100%);
-    display:flex;
-    align-items: center;
+.container-fluid{ 
+    flex-wrap: no-wrap;
 }
-.image-header{
 
+.title-header{ 
+    position:absolute;
+    z-index: 1;
+
+}
+
+.img-header{ 
+    position:absolute;
+    clip-path: polygon(33% 0, 100% 0, 100% 100%, 62% 100%);
+}
+
+.container-fluid h1{
+    padding-top:0.5em;
+    font-size: 12vh;
+    margin-left: 1em;
+}
+
+.container-fluid h4{
+    margin-left: 120px;
 }
 
 .provincia-title-header{
     color: var(--color-primary);
 }
 
-.container-fluid h1{
-    font-size: 100px;
-    margin-left: 1.2em;
+
+
+
+/* Media Queries */
+
+/*Extra extra small*/
+@media screen and (max-width: 779px)  {    
+    .img-header{ 
+        display:none;
+    }
+    
+    .container-fluid h1{ 
+        font-size: 9vh;
+        padding-left:0em;
+    }
+    .container-fluid h4{ 
+        display:none;
+    }
+
+
+
 }
+
+
+/* Medium devices */
+@media screen and (min-width: 780px) and (max-width:1023px){    
+    .container-fluid h1{
+        padding-top:0.5em;
+        font-size: 7.8vh;
+        line-height: 1em;
+        margin-bottom: 0;
+        color: var(--font-color);
+    }
+    
+    .container-fluid h4{
+        font-size: 1.5vh;
+        margin-left: 6em;
+    }
+
+    .title-header{ 
+        margin-top: 2em;
+    }
+    .img-header{ 
+        max-height: 45%;
+    }
+    
+
+}
+ @media screen and (min-width: 1024px) { 
+    .container-fluid h1{
+        padding-top:0.5em;
+        font-size: 11vh;
+        line-height: 1em;
+        margin-bottom: 0;
+        color: var(--font-color);
+    }
+    
+    .container-fluid h4{
+        font-size: 2vh;
+        margin-left: 6em;
+    }
+
+    .title-header{ 
+        margin-top: 2em;
+    }
+
+    .img-header{ 
+        max-height: 60%;
+    }
+
+ }
+
+
+
 
